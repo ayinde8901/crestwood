@@ -1,0 +1,96 @@
+/* Page base */
+.events-page {
+  background-color: #ffffff;
+}
+
+/* Hero */
+.events-hero {
+  background-color: #1e3a8a;
+  padding: 4rem 1.5rem;
+  color: #ffffff;
+}
+
+.events-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.events-hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.events-hero-content p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #e5e7eb;
+}
+
+/* Events section */
+.events-section {
+  background-color: #f9fafb;
+  padding: 4rem 1.5rem;
+}
+
+.events-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Grid */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Card */
+.event-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.event-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.event-card h3 {
+  margin: 0.75rem 0;
+  color: #111827;
+}
+
+.event-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .events-hero-content h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .events-hero {
+    padding: 3rem 1.25rem;
+  }
+
+  .events-hero-content h1 {
+    font-size: 1.7rem;
+  }
+}

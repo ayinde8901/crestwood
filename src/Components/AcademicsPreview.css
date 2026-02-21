@@ -1,0 +1,86 @@
+.academics-preview {
+  padding: 4rem 1.5rem;
+  background-color: #f9fafb;
+}
+
+.academics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.academics-container h2 {
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.academics-intro {
+  max-width: 650px;
+  margin: 0 auto 3rem;
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.academics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.academic-card {
+  background-color: #ffffff;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.academic-icon {
+  font-size: 2.2rem;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.academic-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.academic-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.academics-btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  background-color: #1e3a8a;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.academics-btn:hover {
+  background-color: #1e40af;
+}
+
+@media (max-width: 1024px) {
+  .academics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .academics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .academics-container h2 {
+    font-size: 1.6rem;
+  }
+}

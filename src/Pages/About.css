@@ -1,0 +1,177 @@
+/* ========================
+   GENERAL
+======================== */
+.about-page {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 4rem 1.5rem;
+}
+
+/* ========================
+   HERO
+======================== */
+.about-hero {
+  background: linear-gradient(to right, #1e3a8a, #2563eb);
+  color: #fff;
+  text-align: center;
+  padding: 6rem 1.5rem;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ========================
+   ABOUT SECTION
+======================== */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* ========================
+   MISSION & VISION
+======================== */
+.mission-vision {
+  background: #f9fafb;
+  padding: 4rem 1.5rem;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.mission-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.mission-card h3 {
+  margin-bottom: 1rem;
+  color: #2563eb;
+}
+
+/* ========================
+   VALUES
+======================== */
+.values h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.value-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ========================
+   RESPONSIVE
+======================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-hero h1 {
+    font-size: 2.3rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero {
+    padding: 4rem 1rem;
+  }
+
+  .about-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+}
+
+/* ========================
+   DARK MODE
+======================== */
+body.dark .about-hero {
+  background: linear-gradient(to right, #111827, #1f2937);
+}
+
+body.dark .mission-vision {
+  background: #111827;
+}
+
+body.dark .mission-card,
+body.dark .value-card {
+  background: #1f2937;
+  color: #fff;
+}
+
+body.dark .about-text p {
+  color: #d1d5db;
+}

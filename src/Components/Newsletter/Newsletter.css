@@ -1,0 +1,39 @@
+.newsletter {
+  background: #1e40af;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+.newsletter input {
+  padding: 10px;
+  width: 60%;
+  max-width: 300px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 10px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  border: none;
+  background: #facc15;
+  color: #1e3a8a;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.newsletter button:hover {
+  background: #eab308;
+}
+
+.success {
+  margin-top: 10px;
+  color: #a7f3d0;
+  font-weight: bold;
+}

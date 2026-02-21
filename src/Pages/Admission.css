@@ -1,0 +1,209 @@
+.admissions-hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("../../src/Assets/student\ hero.avif") center/cover no-repeat;
+  color: white;
+  padding: 6rem 1.5rem;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 4rem 1.5rem;
+}
+
+.light-bg {
+  background: #f9fafb;
+}
+
+.admissions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.admissions-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+}
+
+.requirements-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  line-height: 2;
+}
+
+.steps {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.step {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.step span {
+  background: #2563eb;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.admissions-cta {
+  text-align: center;
+  padding: 4rem 1.5rem;
+  background: #2563eb;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admissions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
+/* ===============================
+   LARGE SCREENS (1200px and below)
+================================ */
+@media (max-width: 1200px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .container {
+    padding: 3rem 1.2rem;
+  }
+}
+
+/* ===============================
+   LAPTOPS (1024px and below)
+================================ */
+@media (max-width: 1024px) {
+  .admissions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-content h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+/* ===============================
+   TABLETS (768px and below)
+================================ */
+@media (max-width: 768px) {
+  .admissions-hero {
+    padding: 4rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .admissions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step {
+    align-items: flex-start;
+  }
+
+  .step span {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 3rem 1rem;
+  }
+}
+
+/* ===============================
+   MOBILE (640px and below)
+================================ */
+@media (max-width: 640px) {
+  .hero-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .requirements-list {
+    font-size: 0.95rem;
+  }
+
+  .admissions-card {
+    padding: 1.2rem;
+  }
+
+  .admissions-cta h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ===============================
+   SMALL PHONES (480px and below)
+================================ */
+@media (max-width: 480px) {
+  .admissions-hero {
+    padding: 3rem 0.8rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.85rem;
+  }
+
+  .step {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .step span {
+    margin-bottom: 0.5rem;
+  }
+
+  .admissions-cta {
+    padding: 3rem 1rem;
+  }
+}

@@ -1,0 +1,97 @@
+.announcements-preview {
+  padding: 4rem 1.5rem;
+  background-color: #f9fafb;
+}
+
+.announcements-preview .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* List */
+.announcements-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+/* Card */
+.announcement-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.announcement-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.announcement-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2563eb;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.announcement-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.announcement-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+/* Button */
+.view-all-btn {
+  display: inline-block;
+  margin-top: 2.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: #1e40af;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .announcements-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .announcements-preview {
+    padding: 3rem 1rem;
+  }
+
+  .announcements-list {
+    grid-template-columns: 1fr;
+  }
+
+  .announcement-card {
+    padding: 1.25rem;
+  }
+
+  .announcement-card h3 {
+    font-size: 1rem;
+  }
+}
